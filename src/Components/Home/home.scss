@@ -70,6 +70,7 @@
 
                 }
             }
+
             .cardDiv{
                 position: relative;
                 padding: 2rem 1rem;
@@ -119,12 +120,67 @@
 
                     .icon{
                         font-size: 18px;
-                        color: var(--PrimaryColor);    
+                        color: var(--PrimaryColor)
+                        !important;
+                        margin-left: 10px;
+
+                    }
+
+                    .input[type=range]{
+                        background: rgb(3, 3, 252);
+                        
+
+                    }
+
+
+                }
+
+                .searchOptions{
+                    position: absolute;
+                    background: var(--GradientColor);
+                    width: max-content;
+                    bottom: -0.7rem;
+                    column-gap: .8rem;
+                    padding: 5px 1rem;
+                    left: 50%;
+                    transform: translate(-50%);
+                    border-radius: 20px;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: var(--BlackColor);
+                    }
+
+                    .icon{
+                        font-size: 18px;
+                        align-items: center;
+                    }
+                    span{
+                        font-size: 13px;
                     }
                 }
 
 
             }
+
+            .homeFooterIcons{
+                width: 100%;
+                justify-content: space-between;
+
+                .icon{
+                    font-size: 20px;
+                    margin: 0 5px;
+                    color: var(--whiteColor);
+                    font-weight: 600;
+
+                    &:hover{
+                        color: var(--PrimaryColor);
+                    }
+                }
+            }
+
+
         }
 
     }
